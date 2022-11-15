@@ -1,11 +1,12 @@
 // Emplacement
+let nouveau  = document.querySelector('#nouveau');
 let citation = document.querySelector('#citation');
 let auteur   = document.querySelector('#auteur');
-let nouveau  = document.querySelector('#nouveau');
 
-// Recuperatin 
-let derinier = 0;
-nombreAleatoire = 
+
+// Recuperation de l'index
+let dernier = 0;
+nombreAleatoire = 0;
 
 
 
@@ -35,4 +36,26 @@ let citations = [
     ["Un pessimiste voit la difficulté dans chaque opportunité. Un optimiste voit une opportunité dans chaque difficulté.", "Winston Churchill"]
   ];
 
+// Générer un nombre Entier
+function generNombreEntier(max){
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+
+// Détection des click
+nouveau.addEventListener('click',() =>{
+
+  do {
+    
+    nombreAleatoire = generNombreEntier(citations.length);
+    
+  } while (nombreAleatoire == dernier);
+
+  // console.log(nombreAleatoire);
+  citation.textContent = citations[nombreAleatoire][0];
+  auteur.textContent   = citations[nombreAleatoire][1];
+  dernier              = nombreAleatoire;
+
+
+});
   
