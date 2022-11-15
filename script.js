@@ -1,3 +1,15 @@
+// Emplacement
+let citation = document.querySelector('#citation');
+let auteur   = document.querySelector('#auteur');
+let nouveau  = document.querySelector('#nouveau');
+
+// Recuperatin 
+let derinier = 0;
+nombreAleatoire = 
+
+
+
+
 // Tableau de citations
 let citations = [
     ["La vie est un mystère qu'il faut vivre, et non un problème à résoudre.", "Gandhi"],
@@ -22,3 +34,5 @@ let citations = [
     ["Vous n’êtes jamais trop vieux pour vous fixer de nouveaux buts, ou rendre vos rêves réalité.", "C.S. Lewis"],
     ["Un pessimiste voit la difficulté dans chaque opportunité. Un optimiste voit une opportunité dans chaque difficulté.", "Winston Churchill"]
   ];
+
+  
